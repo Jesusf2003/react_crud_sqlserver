@@ -9,13 +9,13 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "books", schema = "dev_projects")
+@Table(name = "books")
 public class Books {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="idBooks")
-    public Long idBooks;
+    @Column(name="id_books")
+    public Long id;
     @Column(name="title")
     public String title;
     @Column(name="description")

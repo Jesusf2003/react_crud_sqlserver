@@ -10,5 +10,5 @@ import java.util.List;
 public interface BooksRepository extends JpaRepository<Books, Long> {
 
     List<Books> findAllByPublished(boolean published);
-    List<Books> findAllByTitle(String title);
+    List<Books> findAllByTitleContaining(String title);
 }
